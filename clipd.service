@@ -1,0 +1,8 @@
+[Unit]
+After=graphical-session.target
+PartOf=graphical-session.target
+[Service]
+ExecStart=/usr/bin/python3 /home/Storage/user/Servers/clipboard-manager/clipd.py daemon
+Restart=on-failure
+[Install]
+WantedBy=graphical-session.target
